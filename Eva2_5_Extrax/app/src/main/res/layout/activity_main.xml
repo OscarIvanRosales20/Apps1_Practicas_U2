@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtTxtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtTxtSal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado civil:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rdGrpEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdBtnSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soltero" />
+
+        <RadioButton
+            android:id="@+id/rdBtnCas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Casado" />
+
+        <RadioButton
+            android:id="@+id/rdBtnViu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viudo" />
+
+        <RadioButton
+            android:id="@+id/rdBtnDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divorciado" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkBxInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Información Adicional" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:onClick="onClick"/>
+</LinearLayout>
